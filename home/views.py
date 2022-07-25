@@ -10,6 +10,3 @@ from django.conf import settings
 class HomeView(View):
     def get(self, request):
         return render(request, 'home/main.html')
-        # if not request.user.is_authenticated:
-        #     return redirect(reverse_lazy('enroll:signin'))
-        # return HttpResponseRedirect("/admin/")

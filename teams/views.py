@@ -24,14 +24,10 @@ def get_avg_happ(request):
     if not request.user.is_authenticated: #### return avg across all the teams
         happs = Happiness.objects.all()
         avg = happs.aggregate(avg_happiness=Avg('level'))
-        # serializer = TeamHappinessStatsSerializer(teams, many=True)
         data = avg
     else: ### return the statistics of user's team
-        # return redirect(reverse_lazy('employees:happ_get'))
         team_name = Employee.objects.filter(user=request.user).first().team.name
         teams = Team.objects.filter(name=team_name)  ###list will contain only single team name
-        # emps = Employee.objects.all().values_list('id', flat=True)
-        # happs = Happiness.objects.filter(emp__in =emps)
         serializer = AuthEmpTeamHappinessStatsSerializer(teams, many=True)
         data = serializer.data
     return Response(data = data)

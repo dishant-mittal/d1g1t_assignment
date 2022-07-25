@@ -16,6 +16,9 @@ Please use the following json format to post your happiness level (can range fro
 **Important Note**
 I am assuming that whoever wants to install this application is having anaconda installed on his/her system.
 Please use the this link for installing anaconda if  : https://docs.anaconda.com/anaconda/install/
+Also, you don't need to have any explicit database setup for running this app. It uses sqlite which is the default lightweight
+database for Django.
+I have used Django's inbuilt authentication which some tiny customizations.
 
 ## Directory Structure
 
