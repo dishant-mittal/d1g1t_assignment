@@ -60,6 +60,8 @@ external_lib/*/__pycache__
 external_lib/*/*/__pycache__
 external_lib/*/*/*/__pycache__
 external_lib/*/*/*/*/__pycache__
+*/__pycache__
+*/migrations
 
 .DS_Store
 */.DS_Store

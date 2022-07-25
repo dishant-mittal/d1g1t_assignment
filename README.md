@@ -1,10 +1,8 @@
 # d1g1t_assignment
-Django REST assignment for d1g1t
-
 
 ## Overview
 
-Django REST assignment for D1g1t.
+This is Django REST assignment for D1g1t.
 The app uses Django REST inbuilt UI for getting/posting the json data. There is a very basic customized landing page which I have
 created from where you may login to authenticate yourself (If not authenticated already) OR you may get avg. happiness statistics.
 You must authenticate yourself and login to post your happiness level for a day. An employee can only post the happiness level only
@@ -29,20 +27,21 @@ Please use the this link for installing anaconda if  : https://docs.anaconda.com
 
 ## Usage
 
-1. Go inside the directory d1g1t_assignment
-2. Initiate a new conda environment and install all the dependencies within it using: conda create --name env_name --file requirements.txt
-3. Activate the environment using: source activate env_name
-4. Run the following commands:
+1. Clone the repo using command: git clone git@github.com:dishant-mittal/d1g1t_assignment.git
+2. Go inside the directory d1g1t_assignment
+3. Initiate a new conda environment and install all the dependencies within it using: conda create --name env_name --file requirements.txt
+4. Activate the environment using: source activate env_name
+5. Run the following commands:
 rm */migrations/00*
 rm db.sqlite3
 python manage.py check
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
-5. Enter the credentials and details for the superuser and create it.
-6. Type this command for running the django-lightweight server (you may change the port if necessary): python manage.py runserver 8080
-7. Go the your web browser and enter this URL: http://127.0.0.1:8080/admin
-8. At this point you can create the additonal Users ---> then create teams ---> then create/assign employees to the teams and users already
+6. Enter the credentials and details for the superuser and create it.
+7. Type this command for running the django-lightweight server (you may change the port if necessary): python manage.py runserver 8080
+8. Go the your web browser and enter this URL: http://127.0.0.1:8080/admin
+9. At this point you can create the additonal Users ---> then create teams ---> then create/assign employees to the teams and users already
 created. You may go to the homepage of the website from: http://127.0.0.1:8080/   and start using the app
 
 
