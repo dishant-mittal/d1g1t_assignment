@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>{{ settings.APP_NAME }}</title>
+    <!-- edit samples/settings.py and add APP_NAME='DJ4E Samples' or similar
+        Also make sure that home/context_processors.py exists and is included
+        settings.py context processors as 'home.context_processors.settings' -->
+</head>
+<body>
+    <h1> Author- Dishant</h1>
+
+
+    <a href="{% url 'teams:happ_get' %}"><button type="button" >Get Happiness Team Stats</button></a>
+
+    {% if user.is_authenticated %}
+        <p>Authenticated as
+        <pre>
+        Name: {{ user.username }}
+        Id: {{ user.id }}
+        </pre>
+        </p>
+
+        <a href="{% url 'happiness:happ_get' %}"><button type="button" >Get All Happiness</button></a>
+        <a href="{% url 'happiness:happ_post' %}"><button type="button" >Post Happiness Stats</button></a>
+        <p>You can <a href="/accounts/logout">Logout</a></p>
+    {% else %}
+        <p>You can <a href="/accounts/login">Login</a> if you like.</p>
+    {% endif %}
+
+</body>
+</html>
