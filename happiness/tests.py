@@ -17,11 +17,6 @@ class HappinessAPITestCase(APITestCase):
         # Happiness.objects.create(emp_id=1,level=8)
 
     def test_post_method_success(self):
-        qs = User.objects.filter(username='dishant')
-        # qs = Team.objects.filter(name='devops').first()
-        # print("team id is", qs.id)
-        self.assertEquals(qs.count(), 1)
-
         url = "http://127.0.0.1:8080/happiness/post-happiness/"
         data = {
             'level': 9,

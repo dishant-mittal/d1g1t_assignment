@@ -16,7 +16,7 @@ class EmployeeAPITestCase(APITestCase):
         Employee.objects.create(user_id=1, team_id=1) ### employee created
 
     def test_employee_create_success(self):
-        qs = User.objects.filter(username='dishant')
+        qs = Employee.objects.filter(user_id=1)
         # qs = Team.objects.filter(name='devops')
         # print("team id is", qs.id)
         self.assertEquals(qs.count(), 1)
