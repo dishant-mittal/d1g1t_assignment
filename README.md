@@ -17,6 +17,8 @@ Please use the following json format to post your happiness level (can range fro
 
 I have developed the app such that happiness level can be posted from the Django REST UI and that too when the user has been authenticated.
 
+As per the question if the user is not authenticated then getting the happiness stats would result in a single value i.e. the average across all the teams.
+
 I am assuming that whoever wants to install this application is having anaconda installed on his/her system.
 Please use the this link for installing anaconda if  : https://docs.anaconda.com/anaconda/install/
 Also, you don't need to have any explicit database setup for running this app. It uses sqlite which is the default lightweight
