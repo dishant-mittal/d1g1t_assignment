@@ -37,7 +37,7 @@ I have used Django's inbuilt authentication which some customizations.
 4. Activate the environment using: source activate env_name
 5. Run the following commands:
 
-rm */migrations/00*
+rm **/migrations/00**
 
 rm db.sqlite3
 
