@@ -37,7 +37,10 @@ I have used Django's inbuilt authentication which some customizations.
 
         git clone git@github.com:dishant-mittal/d1g1t_assignment.git
 
-2. Go inside the directory d1g1t_assignment
+2. Go inside the directory d1g1t_assignment:
+
+        cd d1g1t_assignment/
+
 3. Initiate a new conda environment and install all the dependencies within it using:
 
         conda config --append channels conda-forge
