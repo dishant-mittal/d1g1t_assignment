@@ -33,7 +33,12 @@ I have used Django's inbuilt authentication which some customizations.
 
 1. Clone the repo using command: git clone git@github.com:dishant-mittal/d1g1t_assignment.git
 2. Go inside the directory d1g1t_assignment
-3. Initiate a new conda environment and install all the dependencies within it using: conda create --name env_name --file requirements.txt
+3. Initiate a new conda environment and install all the dependencies within it using:
+
+conda config --append channels conda-forge
+
+conda create --name env_name --file requirements.txt
+
 4. Activate the environment using: source activate env_name
 5. Run the following commands:
 
