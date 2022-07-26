@@ -40,6 +40,7 @@ rm db.sqlite3
 python manage.py check
 python manage.py makemigrations
 python manage.py migrate
+python manage.py test
 python manage.py createsuperuser
 6. Enter the credentials and details for the superuser and create it.
 7. Type this command for running the django-lightweight server (you may change the port if necessary): python manage.py runserver 8080
