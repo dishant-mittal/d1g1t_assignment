@@ -59,8 +59,14 @@ I have used Django's inbuilt authentication which some customizations.
         python manage.py createsuperuser
 
 6. Enter the credentials and details for the superuser and create it.
-7. Type this command for running the django-lightweight server (you may change the port if necessary): python manage.py runserver 8080
-8. Go the your web browser and enter this URL: http://127.0.0.1:8080/admin
+7. Type this command for running the django-lightweight server (you may change the port if necessary):
+
+        python manage.py runserver 8080
+
+8. Go the your web browser and enter this URL:
+
+        http://127.0.0.1:8080/admin
+
 9. At this point you can create the additonal Users ---> then create teams ---> then create/assign employees to the teams and users already
 created. You may go to the homepage of the website from: http://127.0.0.1:8080/   and start using the app
 
