@@ -41,7 +41,8 @@ config.yml
 
 # Logs
 logs.txt
-logs/
+logs/*
+
 
 # pycache
 src/*/*/*/__pycache__/
