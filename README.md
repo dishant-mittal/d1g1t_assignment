@@ -61,5 +61,5 @@ created. You may go to the homepage of the website from: http://127.0.0.1:8080/ 
 
 
 
-## Contact People
+## Contact Person
 - Dishant Mittal (also the author) - dishantmittal31@gmail.com
