@@ -50,6 +50,8 @@ I have used Django's inbuilt authentication which some customizations.
 
         python manage.py check
 
+        python manage.py makemigrations employees happiness teams
+
         python manage.py makemigrations
 
         python manage.py migrate
