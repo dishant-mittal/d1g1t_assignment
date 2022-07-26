@@ -39,9 +39,6 @@ venv.bak/
 # Configuration File
 config.yml
 
-# Logs
-logs.txt
-logs/*
 
 
 # pycache
