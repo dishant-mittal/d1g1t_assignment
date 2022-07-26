@@ -19,7 +19,7 @@ from teams.models import *
 @api_view(['GET'])
 def get_avg_happ(request):
     """
-    Get Happiness Stats for this employee's team
+    Get Happiness Stats
     """
     if not request.user.is_authenticated: #### return avg across all the teams
         happs = Happiness.objects.all()
