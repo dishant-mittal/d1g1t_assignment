@@ -19,7 +19,7 @@ I am assuming that whoever wants to install this application is having anaconda 
 Please use the this link for installing anaconda if  : https://docs.anaconda.com/anaconda/install/
 Also, you don't need to have any explicit database setup for running this app. It uses sqlite which is the default lightweight
 database for Django.
-I have used Django's inbuilt authentication which some tiny customizations.
+I have used Django's inbuilt authentication which some customizations.
 
 ## Directory Structure
 
@@ -36,13 +36,21 @@ I have used Django's inbuilt authentication which some tiny customizations.
 3. Initiate a new conda environment and install all the dependencies within it using: conda create --name env_name --file requirements.txt
 4. Activate the environment using: source activate env_name
 5. Run the following commands:
+
 rm */migrations/00*
+
 rm db.sqlite3
+
 python manage.py check
+
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py test
+
 python manage.py createsuperuser
+
 6. Enter the credentials and details for the superuser and create it.
 7. Type this command for running the django-lightweight server (you may change the port if necessary): python manage.py runserver 8080
 8. Go the your web browser and enter this URL: http://127.0.0.1:8080/admin
