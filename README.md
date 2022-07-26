@@ -35,29 +35,25 @@ I have used Django's inbuilt authentication which some customizations.
 2. Go inside the directory d1g1t_assignment
 3. Initiate a new conda environment and install all the dependencies within it using:
 
-conda config --append channels conda-forge
+        conda config --append channels conda-forge
 
-conda create --name env_name --file requirements.txt
+        conda create --name env_name --file requirements.txt
 
 4. Activate the environment using:
 
-source activate env_name
+        source activate env_name
 
 5. Run the following commands:
 
-rm \*/migrations/00\*
+        python manage.py check
 
-rm db.sqlite3
+        python manage.py makemigrations
 
-python manage.py check
+        python manage.py migrate
 
-python manage.py makemigrations
+        python manage.py test
 
-python manage.py migrate
-
-python manage.py test
-
-python manage.py createsuperuser
+        python manage.py createsuperuser
 
 6. Enter the credentials and details for the superuser and create it.
 7. Type this command for running the django-lightweight server (you may change the port if necessary): python manage.py runserver 8080
