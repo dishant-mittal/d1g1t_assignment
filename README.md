@@ -39,7 +39,10 @@ conda config --append channels conda-forge
 
 conda create --name env_name --file requirements.txt
 
-4. Activate the environment using: source activate env_name
+4. Activate the environment using:
+
+source activate env_name
+
 5. Run the following commands:
 
 rm \*/migrations/00\*
